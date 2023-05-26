@@ -9,11 +9,15 @@ const userDistance = parseInt(prompt('Quanti chilometri vuoi percorrere?' , 13))
 console.log(userDistance)
 console.log(typeof userDistance)
 
+//#VALIDAZIONE
+if (isNaN(userDistance)){
+    alert("ATTENZIONE! inserire solo la cifra dei chilometri da percorrere")
+}
+
 // 2 Chiedere all'utente l'età
 const userAge= parseInt(prompt('Quanti anni hai?' , 20))
 console.log(userAge)
 console.log(typeof userDistance)
-
 
 // 3 Cacolare il prezzo del biglietto in base ai chilometri
 let lastPrice = 0.21 * userDistance
