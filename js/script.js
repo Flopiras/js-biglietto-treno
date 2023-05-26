@@ -21,8 +21,7 @@ console.log(lastPrice)
 console.log(typeof userDistance)
 
 
-// 4 Applicare sconti SE necessari
-
+// 4 Applicare sconti SE necessari + 5
 if(userAge < 18){
     lastPrice = (lastPrice * 0.8).toFixed(2)
 } else if(userAge > 65){
@@ -30,3 +29,5 @@ if(userAge < 18){
 }
 console.log(lastPrice)
 
+// 6 Far apparire il prezzo nel DOM
+myElement.innerText = lastPrice
